@@ -14,6 +14,7 @@
 		515465BB2A0A9D0800382856 /* MoneyTalksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515465BA2A0A9D0800382856 /* MoneyTalksTests.swift */; };
 		515465C52A0A9D0800382856 /* MoneyTalksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515465C42A0A9D0800382856 /* MoneyTalksUITests.swift */; };
 		515465C72A0A9D0800382856 /* MoneyTalksUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515465C62A0A9D0800382856 /* MoneyTalksUITestsLaunchTests.swift */; };
+		5163E5CD2A0D3CBA00758771 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5163E5CC2A0D3CBA00758771 /* GoogleService-Info.plist */; };
 		517D644F2A0AA60000EA4352 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 517D644E2A0AA60000EA4352 /* FirebaseAnalytics */; };
 		517D64512A0AA60000EA4352 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 517D64502A0AA60000EA4352 /* FirebaseAnalyticsOnDeviceConversion */; };
 		517D64532A0AA60000EA4352 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 517D64522A0AA60000EA4352 /* FirebaseAnalyticsSwift */; };
@@ -71,6 +72,7 @@
 		515465C02A0A9D0800382856 /* MoneyTalksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyTalksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		515465C42A0A9D0800382856 /* MoneyTalksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTalksUITests.swift; sourceTree = "<group>"; };
 		515465C62A0A9D0800382856 /* MoneyTalksUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTalksUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5163E5CC2A0D3CBA00758771 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 		515465A82A0A9D0700382856 /* MoneyTalks */ = {
 			isa = PBXGroup;
 			children = (
+				5163E5CC2A0D3CBA00758771 /* GoogleService-Info.plist */,
 				515465A92A0A9D0700382856 /* MoneyTalksApp.swift */,
 				515465AB2A0A9D0700382856 /* ContentView.swift */,
 				515465AD2A0A9D0800382856 /* Assets.xcassets */,
@@ -321,6 +324,7 @@
 			files = (
 				515465B12A0A9D0800382856 /* Preview Assets.xcassets in Resources */,
 				515465AE2A0A9D0800382856 /* Assets.xcassets in Resources */,
+				5163E5CD2A0D3CBA00758771 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
