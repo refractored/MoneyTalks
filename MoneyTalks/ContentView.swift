@@ -14,18 +14,24 @@ struct ContentView: View {
         NavigationStack {
             ZStack {
                 gradient
-                    .opacity(0.25)
+                    .opacity(0.1)
                     .ignoresSafeArea()
                 
                 VStack {
-
+                    Rectangle()
+                                           .fill(Color.clear)
+                                           .frame(height: 10)
+                                           .background(LinearGradient(colors: [.green.opacity(0.5), .blue.opacity(0.8)],
+                                                                      startPoint: .top, endPoint: .bottomTrailing)
+                                           )
+                Spacer()
                     Text("$20")
                         .font(.system(size: 80))
                         .frame(width: 5000)
                         .foregroundColor(.green)
                 }
-                .navigationTitle("Home")
-                .font(.title2)
+                .navigationTitle("Home sweet home")
+                                .font(.title2)
             }
             .navigationBarTitleDisplayMode(.inline)
         }
