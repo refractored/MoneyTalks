@@ -8,36 +8,35 @@
 import SwiftUI
 
 struct ContentView: View {
-    let gradient = LinearGradient(colors: [Color.black,Color.green],
-                                  startPoint: .top, endPoint: .bottom)
+    let background = [Color.black, Color.black, Color.black]
+    let navigationBar =  [Color.green, Color.blue]
+    let gradient = LinearGradient(colors:[Color.black,Color.green],startPoint:.top,endPoint:.bottom)
     var body: some View {
         NavigationStack {
             ZStack {
-                gradient
-                    .opacity(0.1)
+                LinearGradient(colors:navigationBar,startPoint:.top,endPoint:.bottom)
+                    .opacity(0.9)
                     .ignoresSafeArea()
-                
                 VStack {
-                    Rectangle()
-                                           .fill(Color.clear)
-                                           .frame(height: 10)
-                                           .background(LinearGradient(colors: [.green.opacity(0.5), .blue.opacity(0.8)],
-                                                                      startPoint: .top, endPoint: .bottomTrailing)
-                                           )
-                Spacer()
-                    Text("$20")
-                        .font(.system(size: 80))
-                        .frame(width: 5000)
-                        .foregroundColor(.green)
+                    Divider()
+                        .background(.ultraThinMaterial)
+                    LinearGradient(colors:background,startPoint: .top,endPoint: .bottom)
+                        .ignoresSafeArea()
+                        .opacity(0.9)
+//                        .background(LinearGradient(colors:navigationBar ,startPoint:.top,endPoint:.bottomTrailing)
+ //                                          )
                 }
-                .navigationTitle("Home sweet home")
-                                .font(.title2)
+                Text("$20")
+                                        .font(.system(size: 80))
+                                        .frame(width: 5000)
+                                        .foregroundColor(.green)
+                .navigationTitle("Home")
+                .font(Font.headline.weight(.black))
             }
             .navigationBarTitleDisplayMode(.inline)
         }
     }
-} 
-
+}
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
