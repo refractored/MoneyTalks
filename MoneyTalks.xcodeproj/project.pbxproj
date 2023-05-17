@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27B751CF2A153063003EE5A5 /* LoadingBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B751CE2A153063003EE5A5 /* LoadingBar.swift */; };
 		515465AA2A0A9D0700382856 /* MoneyTalksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515465A92A0A9D0700382856 /* MoneyTalksApp.swift */; };
 		515465AC2A0A9D0700382856 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515465AB2A0A9D0700382856 /* ContentView.swift */; };
 		515465AE2A0A9D0800382856 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 515465AD2A0A9D0800382856 /* Assets.xcassets */; };
@@ -62,6 +63,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		27B751CE2A153063003EE5A5 /* LoadingBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingBar.swift; sourceTree = "<group>"; };
 		515465A62A0A9D0700382856 /* MoneyTalks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyTalks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		515465A92A0A9D0700382856 /* MoneyTalksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTalksApp.swift; sourceTree = "<group>"; };
 		515465AB2A0A9D0700382856 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 			children = (
 				5163E5CC2A0D3CBA00758771 /* GoogleService-Info.plist */,
 				515465A92A0A9D0700382856 /* MoneyTalksApp.swift */,
+				27B751CE2A153063003EE5A5 /* LoadingBar.swift */,
 				515465AB2A0A9D0700382856 /* ContentView.swift */,
 				515465AD2A0A9D0800382856 /* Assets.xcassets */,
 				515465AF2A0A9D0800382856 /* Preview Content */,
@@ -350,6 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				515465AC2A0A9D0700382856 /* ContentView.swift in Sources */,
+				27B751CF2A153063003EE5A5 /* LoadingBar.swift in Sources */,
 				515465AA2A0A9D0700382856 /* MoneyTalksApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
