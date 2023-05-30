@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Firebase
+import Liquid
 
 struct ContentView: View {
     @State var isLoggedIn = false
@@ -16,7 +17,7 @@ struct ContentView: View {
     
     var body: some View {
         NavigationStack {
-            if isLoggedIn {
+            if true {
                 ZStack {
                     LinearGradient(colors:navigationBar,startPoint:.top,endPoint:.bottom)
                         .opacity(0.9)
@@ -30,10 +31,24 @@ struct ContentView: View {
                         //                        .background(LinearGradient(colors:navigationBar ,startPoint:.top,endPoint:.bottomTrailing)
                         //                                          )
                     }
+                    Liquid()
+                        .frame(width: 240, height: 240)
+                        .foregroundColor(.green)
+                        .opacity(0.3)
+
+
+                    Liquid()
+                        .frame(width: 220, height: 220)
+                        .foregroundColor(.green)
+                        .opacity(0.6)
+
+                    Liquid(samples: 5)
+                        .frame(width: 200, height: 200)
+                        .foregroundColor(.green)
                     Text("$20")
                         .font(.system(size: 80))
                         .frame(width: 5000)
-                        .foregroundColor(.green)
+                        .foregroundColor(.black)
                         .navigationTitle("Home")
                         .font(Font.headline.weight(.black))
                 }

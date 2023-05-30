@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		272D716E2A264401002607EA /* Liquid in Frameworks */ = {isa = PBXBuildFile; productRef = 272D716D2A264401002607EA /* Liquid */; };
 		27B751CF2A153063003EE5A5 /* LoadingBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B751CE2A153063003EE5A5 /* LoadingBar.swift */; };
 		515465AA2A0A9D0700382856 /* MoneyTalksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515465A92A0A9D0700382856 /* MoneyTalksApp.swift */; };
 		515465AC2A0A9D0700382856 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515465AB2A0A9D0700382856 /* ContentView.swift */; };
@@ -92,6 +93,7 @@
 				517D64532A0AA60000EA4352 /* FirebaseAnalyticsSwift in Frameworks */,
 				517D64772A0AA60100EA4352 /* FirebaseMLModelDownloader in Frameworks */,
 				517D64552A0AA60000EA4352 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				272D716E2A264401002607EA /* Liquid in Frameworks */,
 				517D644F2A0AA60000EA4352 /* FirebaseAnalytics in Frameworks */,
 				517D646B2A0AA60000EA4352 /* FirebaseFirestoreSwift in Frameworks */,
 				517D64512A0AA60000EA4352 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
@@ -232,6 +234,7 @@
 				517D647E2A0AA60100EA4352 /* FirebaseRemoteConfigSwift */,
 				517D64802A0AA60100EA4352 /* FirebaseStorage */,
 				517D64822A0AA60100EA4352 /* FirebaseStorageCombine-Community */,
+				272D716D2A264401002607EA /* Liquid */,
 			);
 			productName = MoneyTalks;
 			productReference = 515465A62A0A9D0700382856 /* MoneyTalks.app */;
@@ -308,6 +311,7 @@
 			packageReferences = (
 				517D64482A0AA3AD00EA4352 /* XCRemoteSwiftPackageReference "SwiftLint" */,
 				517D644D2A0AA60000EA4352 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				272D716C2A264401002607EA /* XCRemoteSwiftPackageReference "liquid" */,
 			);
 			productRefGroup = 515465A72A0A9D0700382856 /* Products */;
 			projectDirPath = "";
@@ -687,6 +691,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		272D716C2A264401002607EA /* XCRemoteSwiftPackageReference "liquid" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maustinstar/liquid.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		517D64482A0AA3AD00EA4352 /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/SwiftLint";
@@ -706,6 +718,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		272D716D2A264401002607EA /* Liquid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 272D716C2A264401002607EA /* XCRemoteSwiftPackageReference "liquid" */;
+			productName = Liquid;
+		};
 		517D644B2A0AA51C00EA4352 /* SwiftLintPlugin */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 517D64482A0AA3AD00EA4352 /* XCRemoteSwiftPackageReference "SwiftLint" */;
